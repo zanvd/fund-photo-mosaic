@@ -5,7 +5,7 @@
 		<meta name = "viewport" content = "width=device-width, initial-scale=1" />
 		<title>Foto Mozaik</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css" />
-		<link rel="stylesheet" type="text/css" href="style/home.css" />
+		<link rel="stylesheet" type="text/css" href="style/contact.css" />
 		<script type="text/javascript" src="script/base.js"></script>
 	</head>
 	<body>
@@ -61,25 +61,39 @@
 						</li>
 					</ul>
 				</nav>
-				<section id="slider-section">
-					<div class="slider-image">
-						<img src="img/slider-pic1.png" width="100%" />
-					</div>
-					<div class="slider-text">
-						<h1 class="slider-title">Mozaik 1</h1>
-						<p class="slider-description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Vestibulum scelerisque, est sed finibus molestie, arcu leo luctus velit, vel aliquam magna ante vel urna.
-							Integer eu sapien hendrerit, porttitor enim et, laoreet nibh.
-							Maecenas lobortis gravida blandit.
-							Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
-							Vestibulum tincidunt risus ut nunc molestie efficitur.
-							Sed rhoncus in sem nec facilisis.
-							Proin tincidunt orci dignissim nibh pellentesque sodales.
-							Integer eleifend eget est sed vehicula.
-							Sed molestie pulvinar pharetra.
-						</p>
-					</div>
+				<section>
+					<h1>Kontakt</h1>
+					<p class="contact-text">
+						Janez Novak<br />
+						Ulica Mozaikov 1<br />
+						1000 Ljubljana
+					</p>
+					<p class="contact-text">
+						<a href="mailto:janez.novak@mozaik.si">janez.novak@mozaik.si</a><br />
+						<a href="tel:+38631123456" >+386 31 123 456</a>
+					</p>
+				</section>
+				<section>
+					<form id="contact-form" role="form" method="post" action="">
+						<div class="form-group">
+							<label for="email">Epošta<span class="require">*</span></label><br/>
+							<input id="email" type="email" name="email" placeholder="Epošta" maxlength="80" size="30" required />
+						</div>
+						<div class="form-group">
+							<label for="subject">Zadeva</label><br/>
+							<input id="subject" type="text" name="subject" placeholder="Zadeva" maxlength="80" size="30" autocomplete="off" />
+						</div>
+						<div class = "form-group">
+							<label for="message">Sporočilo<span class="require">*</span></label><br/>
+							<textarea id="message" type="text" name="message" form="contact-form" maxlength="1000" cols="50" rows="10" required></textarea>
+						</div>
+						<div class="g-recaptcha" data-sitekey=""></div>
+						<div class="robot-group">
+							<input id="robot" type="checkbox" name="robot" required />
+							<label for="robot">Nisem robot</label>
+						</div>
+						<button id="submit-button" type="submit">Pošlji</button>
+					</form>
 				</section>
 			</main>
 			<footer>

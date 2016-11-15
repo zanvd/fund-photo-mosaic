@@ -1,0 +1,23 @@
+/* Story */
+
+#story-section {
+	padding: 0 5%;
+}
+
+#story-section > * {
+	margin-bottom: 5%;
+}
+
+.story-title {
+	border-bottom: 1px solid black;
+}
+
+.story-text {
+	padding: 3%;
+	background-color: rgba(0, 140, 10, .7);
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	text-align: justify;
+}
+
+/* End of story */

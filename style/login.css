@@ -1,0 +1,52 @@
+main {
+	/**
+	 * This padding holds everything in place
+	 * and doesn't add to the top edge distance.
+	 */
+	padding: 1px 0 5em;
+}
+
+section {
+	margin: 20% 0;
+	padding: 0 5%;
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	text-align: left;
+}
+.form-group > input {
+	height: 2.5em;
+	width: 80%;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+.robot-group {
+	margin-top: 2%;
+	text-align: left;
+}
+.robot-group > input {
+	vertical-align: baseline;
+}
+
+#submit-button {
+	margin-top: 2%;
+	padding: 0.5em 1em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	font-size: 1em;
+	color: black;
+	background-color: rgba(0, 140, 10, .8);
+}
+
+.register-link-container {
+	margin-top: 5%;
+}
