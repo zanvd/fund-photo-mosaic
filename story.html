@@ -9,91 +9,89 @@
 		<script type="text/javascript" src="script/base.js"></script>
 	</head>
 	<body>
-		<div class="content-wrapper">
-			<header>
-				<div class="menu-image-container">
-					<input id="menu-open" type="image" src="img/menu-open.png" width="35px" height="23px" alt="Menu" />
-					<input id="menu-close" type="image" src="img/menu-close.svg" width="35px" height="23px" alt="Zapri" />
+		<header>
+			<div class="menu-image-container">
+				<input id="menu-open" type="image" src="img/menu-open.png" width="35px" height="23px" alt="Menu" />
+				<input id="menu-close" type="image" src="img/menu-close.svg" width="35px" height="23px" alt="Zapri" />
+			</div>
+			<nav id="desktop-nav">
+				<ul>
+					<li>
+						<a href="index.html">Domov</a>
+					</li>
+					<li>
+						<a href="story.html">Zgodba</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik 1</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik #</a>
+					</li>
+					<li>
+						<a href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="logo-container">
+				<a href="index.html"><img src="img/logo.png" width="95px" height="30px" alt="Mozaik" /></a>
+			</div>
+			<div id="login-button-container">
+				<button id="login-button" type="button">Prijava</button>
+			</div>
+		</header>
+		<main>
+			<nav id="mobile-nav" class="mobile-nav-hide">
+				<ul>
+					<li>
+						<a href="index.html">Domov</a>
+					</li>
+					<li>
+						<a href="story.html">Zgodba</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik 1</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik #</a>
+					</li>
+					<li>
+						<a href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<section id="story-section">
+				<h1 class="story-title">Zgodba</h1>
+				<div class="story-text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Vestibulum scelerisque, est sed finibus molestie, arcu leo luctus velit, vel aliquam magna ante vel urna.
+						Integer eu sapien hendrerit, porttitor enim et, laoreet nibh.
+						Maecenas lobortis gravida blandit.
+						Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
+						Vestibulum tincidunt risus ut nunc molestie efficitur.
+						Sed rhoncus in sem nec facilisis.
+						Proin tincidunt orci dignissim nibh pellentesque sodales.
+						Integer eleifend eget est sed vehicula.
+						Sed molestie pulvinar pharetra.
+					</p>
+					<p>
+						Proin a tristique libero.
+						Curabitur bibendum nisi odio, eu iaculis metus feugiat euismod.
+						Donec venenatis nibh nec mi semper, sed finibus justo sagittis.
+						Etiam id eros volutpat, lacinia ligula sed, scelerisque libero.
+						Morbi consequat sem vel purus tincidunt laoreet.
+						Curabitur urna metus, pretium ac elit nec, cursus consectetur enim.
+						Cras consectetur est dui, sit amet mollis justo ultrices et.
+						Aliquam pretium lorem vitae volutpat suscipit.
+					</p>
 				</div>
-				<nav id="desktop-nav">
-					<ul>
-						<li>
-							<a href="index.html">Domov</a>
-						</li>
-						<li>
-							<a href="story.html">Zgodba</a>
-						</li>
-						<li>
-							<a href="mosaic.html">Mozaik 1</a>
-						</li>
-						<li>
-							<a href="mosaic.html">Mozaik #</a>
-						</li>
-						<li>
-							<a href="contact.html">Kontakt</a>
-						</li>
-					</ul>
-				</nav>
-				<div id="logo-container">
-					<a href="index.html"><img src="img/logo.png" width="50%" alt="LOGO" /></a>
-				</div>
-				<div id="login-button-container">
-					<button id="login-button" type="button">Prijava</button>
-				</div>
-			</header>
-			<main>
-				<nav id="mobile-nav" class="mobile-nav-hide">
-					<ul>
-						<li>
-							<a href="index.html">Domov</a>
-						</li>
-						<li>
-							<a href="story.html">Zgodba</a>
-						</li>
-						<li>
-							<a href="mosaic.html">Mozaik 1</a>
-						</li>
-						<li>
-							<a href="mosaic.html">Mozaik #</a>
-						</li>
-						<li>
-							<a href="contact.html">Kontakt</a>
-						</li>
-					</ul>
-				</nav>
-				<section id="story-section">
-					<h1 class="story-title">Zgodba</h1>
-					<div class="story-text">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Vestibulum scelerisque, est sed finibus molestie, arcu leo luctus velit, vel aliquam magna ante vel urna.
-							Integer eu sapien hendrerit, porttitor enim et, laoreet nibh.
-							Maecenas lobortis gravida blandit.
-							Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
-							Vestibulum tincidunt risus ut nunc molestie efficitur.
-							Sed rhoncus in sem nec facilisis.
-							Proin tincidunt orci dignissim nibh pellentesque sodales.
-							Integer eleifend eget est sed vehicula.
-							Sed molestie pulvinar pharetra.
-						</p>
-						<p>
-							Proin a tristique libero.
-							Curabitur bibendum nisi odio, eu iaculis metus feugiat euismod.
-							Donec venenatis nibh nec mi semper, sed finibus justo sagittis.
-							Etiam id eros volutpat, lacinia ligula sed, scelerisque libero.
-							Morbi consequat sem vel purus tincidunt laoreet.
-							Curabitur urna metus, pretium ac elit nec, cursus consectetur enim.
-							Cras consectetur est dui, sit amet mollis justo ultrices et.
-							Aliquam pretium lorem vitae volutpat suscipit.
-						</p>
-					</div>
-				</section>
-			</main>
-			<footer>
-				<p>
-					&copy 2016
-				</p>
-			</footer>
-		</div>
+			</section>
+		</main>
+		<footer>
+			<p>
+				&copy 2016
+			</p>
+		</footer>
 	</body>
 </html>

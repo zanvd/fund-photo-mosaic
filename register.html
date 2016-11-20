@@ -5,9 +5,8 @@
 		<meta name = "viewport" content = "width=device-width, initial-scale=1" />
 		<title>Foto Mozaik</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css" />
-		<link rel="stylesheet" type="text/css" href="style/login.css" />
+		<link rel="stylesheet" type="text/css" href="style/register.css" />
 		<script type="text/javascript" src="script/base.js"></script>
-		<script type="text/javascript" src="script/login.js"></script>
 	</head>
 	<body>
 		<header>
@@ -15,6 +14,25 @@
 				<input id="menu-open" type="image" src="img/menu-open.png" width="35px" height="23px" alt="Menu" />
 				<input id="menu-close" type="image" src="img/menu-close.svg" width="35px" height="23px" alt="Zapri" />
 			</div>
+			<nav id="desktop-nav">
+				<ul>
+					<li>
+						<a href="index.html">Domov</a>
+					</li>
+					<li>
+						<a href="story.html">Zgodba</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik 1</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik #</a>
+					</li>
+					<li>
+						<a href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
 			<div id="logo-container">
 				<a href="index.html"><img src="img/logo.png" width="95px" height="30px" alt="Mozaik" /></a>
 			</div>
@@ -43,25 +61,27 @@
 				</ul>
 			</nav>
 			<section>
-				<h1>Prijava</h1>
-				<form id="login-form" role="form" method="post" action="">
+				<h1>Registracija</h1>
+				<form id="register-form" role="form" method="post" action="">
 					<div class="form-group">
-						<label for="username">Uporabniško ime*</label>
-						<input id="username" name="username" type="text" placeholder="Uporabniško ime" required />
+						<label for="username">Uporabniško ime<span class="require">*</span></label><br />
+						<input id="username" type="text" name="username" placeholder="Uporabniško ime" maxlength="16" required />
 					</div>
 					<div class="form-group">
-						<label for="password">Geslo*</label>
-						<input id="password" name="password" type="password" placeholder="Geslo" required />
+						<label for="password">Geslo<span class="require">*</span></label><br />
+						<input id="password" type="password" name="password" placeholder="Geslo" maxlength="32" required />
 					</div>
+					<div class="form-group">
+						<label for="email">Epošta<span class="require">*</span></label><br />
+						<input id="email" type="email" name="email" placeholder="Epošta" maxlength="80" required />
+					</div>
+					<div class="g-recaptcha" data-sitekey=""></div>
 					<div class="robot-group">
 						<input id="robot" type="checkbox" name="robot" required />
 						<label for="robot">Nisem robot</label>
 					</div>
-					<button id="login-submit-button" type="submit">Prijavi se</button>
+					<button id="submit-button" type="submit">Pošlji</button>
 				</form>
-				<div class="register-link-container">
-					<a id="register-link" href="register.html">Registriraj se</a>
-				</div>
 			</section>
 		</main>
 		<footer>

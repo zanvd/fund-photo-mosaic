@@ -1,9 +1,4 @@
 /* Story */
-
-#story-section {
-	padding: 0 5%;
-}
-
 #story-section > * {
 	margin-bottom: 5%;
 }

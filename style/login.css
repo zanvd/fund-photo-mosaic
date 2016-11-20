@@ -8,7 +8,6 @@ main {
 
 section {
 	margin: 20% 0;
-	padding: 0 5%;
 	text-align: center;
 }
 
@@ -37,7 +36,7 @@ label {
 	vertical-align: baseline;
 }
 
-#submit-button {
+#login-submit-button {
 	margin-top: 2%;
 	padding: 0.5em 1em;
 	-webkit-border-radius: 0.5em;
