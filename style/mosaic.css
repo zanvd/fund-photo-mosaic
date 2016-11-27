@@ -3,6 +3,7 @@ section > * {
 }
 
 #mosaic-section > img {
+	width: 100%;
 	border: 2px solid black;
 }
 #mosaic-section > p {

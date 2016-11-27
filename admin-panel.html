@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta content="text/html" charset="utf-8" />
-		<meta name = "viewport" content = "width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "text/html width=device-width, initial-scale=1" />
 		<title>Foto Mozaik</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css" />
 		<link rel="stylesheet" type="text/css" href="style/admin-panel.css" />
@@ -13,14 +13,14 @@
 	<body>
 		<header>
 			<div class="menu-image-container">
-				<input id="menu-open" type="image" src="img/menu-open.png" width="35px" height="23px" alt="Menu" />
-				<input id="menu-close" type="image" src="img/menu-close.svg" width="35px" height="23px" alt="Zapri" />
+				<input id="menu-open" type="image" src="img/menu-open.png" width="35" height="23" alt="Menu" />
+				<input id="menu-close" type="image" src="img/menu-close.svg" width="35" height="23" alt="Zapri" />
 			</div>
 			<div id="logo-container">
-				<a href="index.html"><img src="img/logo.png" width="95px" height="30px" alt="Mozaik" /></a>
+				<a href="index.html"><img src="img/logo.png" width="95" height="30" alt="Mozaik" /></a>
 			</div>
 			<div id="login-button-container">
-				<button id="logout-button" type="button">Odjava</button>
+				<button id="login-button" type="button">Prijava</button>
 			</div>
 		</header>
 		<main>
@@ -45,7 +45,7 @@
 			</nav>
 			<section>
 				<h1>Nadzorna plošča</h1>
-				<form id="mosaic-form" role="form" method="post" action="">
+				<form id="mosaic-form" method="post">
 					<div class="form-group">
 						<label for="mosaic-title">Naslov mozaika<span class="require">*</span></label>
 						<input id="mosaic-title" type="text" name="mosaic-title" placeholder="Naslov mozaika" required />
@@ -56,14 +56,14 @@
 					</div>
 					<div class="form-group">
 						<label for="mosaic-file">Datoteka<span class="require">*</span></label>
-						<input id="mosaic-file" type="file" name="mosaic-file" placeholder="Datoteka" accept="image/*" required />
+						<input id="mosaic-file" type="file" name="mosaic-file" accept="image/*" required />
 					</div>
 					<div class="form-group">
 						<label for="mosaic-cut">Število koščkov</label><br />
 						<input id="mosaic-cut" type="number" name="mosaic-cut" min="1" value="1" />
 					</div>
 					<div class="form-group">
-						<label for="mosaic-cut-type">Način razreza</label>
+						<label>Način razreza</label>
 						<div class="radio-group">
 							<input name="mosaic-cut-type" type="radio" value="auto" checked />Avtomatski<br />
 							<input name="mosaic-cut-type" type="radio" value="distributed" />Enakomerni<br />
@@ -75,7 +75,7 @@
 						<input id="mosaic-price" type="number" name="mosaic-price" min="0.01" value="1" step="0.01" />
 					</div>
 					<div id="mosaic-manual-price" class="form-group display-none">
-						<label for="mosaic-pieces">Cena koščkov</label>
+						<label>Cena koščkov</label>
 						<div id="mosaic-pieces-container">
 
 						</div>
@@ -86,7 +86,7 @@
 		</main>
 		<footer>
 			<p>
-				&copy 2016
+				&copy; 2016
 			</p>
 		</footer>
 	</body>

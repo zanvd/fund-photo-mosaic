@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta content="text/html" charset="utf-8" />
-		<meta name = "viewport" content = "width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "text/html width=device-width, initial-scale=1" />
 		<title>Foto Mozaik</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css" />
 		<link rel="stylesheet" type="text/css" href="style/mosaic.css" />
@@ -12,11 +12,11 @@
 	<body>
 		<header>
 			<div class="menu-image-container">
-				<input id="menu-open" type="image" src="img/menu-open.png" width="35px" height="23px" alt="Menu" />
-				<input id="menu-close" type="image" src="img/menu-close.svg" width="35px" height="23px" alt="Zapri" />
+				<input id="menu-open" type="image" src="img/menu-open.png" width="35" height="23" alt="Menu" />
+				<input id="menu-close" type="image" src="img/menu-close.svg" width="35" height="23" alt="Zapri" />
 			</div>
 			<div id="logo-container">
-				<a href="index.html"><img src="img/logo.png" width="95px" height="30px" alt="Mozaik" /></a>
+				<a href="index.html"><img src="img/logo.png" width="95" height="30" alt="Mozaik" /></a>
 			</div>
 			<div id="login-button-container">
 				<button id="login-button" type="button">Prijava</button>
@@ -44,7 +44,7 @@
 			</nav>
 			<section id="mosaic-section">
 				<h1>Mozaik 1</h1>
-				<img src="img/slider-pic1.png" width="100%" />
+				<img src="img/slider-pic1.png" alt="Slika1" />
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Vestibulum scelerisque, est sed finibus molestie, arcu leo luctus velit, vel aliquam magna ante vel urna.
@@ -72,29 +72,27 @@
 						Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
 					</p>
 				</div>
-				<form>
-					<form id="comment-form" role="form" method="post" action="">
-						<div class="form-group">
-							<label for="name">Ime<span class="require">*</span></label><br/>
-							<input id="name" type="text" name="name" placeholder="Ime" maxlength="80" size="30" required />
-						</div>
-						<div class = "form-group">
-							<label for="message">Sporočilo<span class="require">*</span></label><br/>
-							<textarea id="message" type="text" name="message" form="comment-form" maxlength="1000" cols="50" rows="10" required></textarea>
-						</div>
-						<div class="g-recaptcha" data-sitekey=""></div>
-						<div class="robot-group">
-							<input id="robot" type="checkbox" name="robot" required />
-							<label for="robot">Nisem robot</label>
-						</div>
-						<button id="submit-button" type="submit">Pošlji</button>
-					</form>
+				<form id="comment-form" method="post">
+					<div class="form-group">
+						<label for="name">Ime<span class="require">*</span></label><br/>
+						<input id="name" type="text" name="name" placeholder="Ime" maxlength="80" size="30" required />
+					</div>
+					<div class = "form-group">
+						<label for="message">Sporočilo<span class="require">*</span></label><br/>
+						<textarea id="message" name="message" form="comment-form" maxlength="1000" cols="50" rows="10" required></textarea>
+					</div>
+					<div class="g-recaptcha" data-sitekey=""></div>
+					<div class="robot-group">
+						<input id="robot" type="checkbox" name="robot" required />
+						<label for="robot">Nisem robot</label>
+					</div>
+					<button id="submit-button" type="submit">Pošlji</button>
 				</form>
 			</section>
 		</main>
 		<footer>
 			<p>
-				&copy 2016
+				&copy; 2016
 			</p>
 		</footer>
 	</body>

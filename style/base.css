@@ -37,7 +37,6 @@ body {
 	font-family: sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
 	background-color: rgba(179, 203, 203, .3);
 }
 
@@ -80,6 +79,10 @@ h1, h3 {
 }
 .display-block {
 	display: block !important;
+}
+
+.slider-image > img {
+	width: 100%;
 }
 
 /* End of General */
