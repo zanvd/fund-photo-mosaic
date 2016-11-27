@@ -11,32 +11,15 @@ section {
 	text-align: center;
 }
 
-label {
-	font-weight: bold;
-}
-
 .form-group {
 	display: flex;
 	flex-direction: column;
 	margin-top: 5%;
 	text-align: left;
 }
-.form-group > input {
-	height: 2.5em;
-	width: 80%;
-	-webkit-border-radius: 0.5em;
-	border-radius: 0.5em;
-}
-
-.robot-group {
-	margin-top: 2%;
-	text-align: left;
-}
-.robot-group > input {
-	vertical-align: baseline;
-}
 
 #login-submit-button {
+	width: 140px;
 	margin-top: 2%;
 	padding: 0.5em 1em;
 	-webkit-border-radius: 0.5em;
@@ -48,4 +31,15 @@ label {
 
 .register-link-container {
 	margin-top: 5%;
+}
+
+/* Medium screen size */
+@media all and (min-width: 560px) {
+	.form-group {
+		align-items: center;
+	}
+
+	.robot-group {
+		text-align: center !important;
+	}
 }

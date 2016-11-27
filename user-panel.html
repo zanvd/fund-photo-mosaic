@@ -5,7 +5,7 @@
 		<meta name = "viewport" content = "width=device-width, initial-scale=1" />
 		<title>Foto Mozaik</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css" />
-		<link rel="stylesheet" type="text/css" href="style/home.css" />
+		<link rel="stylesheet" type="text/css" href="style/form.css" />
 		<script type="text/javascript" src="script/base.js"></script>
 	</head>
 	<body>
@@ -18,7 +18,7 @@
 				<a href="index.html"><img src="img/logo.png" width="95px" height="30px" alt="Mozaik" /></a>
 			</div>
 			<div id="login-button-container">
-				<button id="login-button" type="button">Prijava</button>
+				<button id="logout-button" type="button">Odjava</button>
 			</div>
 		</header>
 		<main>
@@ -41,25 +41,27 @@
 					</li>
 				</ul>
 			</nav>
-			<section id="slider-section">
-				<div class="slider-image">
-					<img src="img/slider-pic1.png" width="100%" />
-				</div>
-				<div class="slider-text">
-					<h1 class="slider-title">Mozaik 1</h1>
-					<p class="slider-description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Vestibulum scelerisque, est sed finibus molestie, arcu leo luctus velit, vel aliquam magna ante vel urna.
-						Integer eu sapien hendrerit, porttitor enim et, laoreet nibh.
-						Maecenas lobortis gravida blandit.
-						Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
-						Vestibulum tincidunt risus ut nunc molestie efficitur.
-						Sed rhoncus in sem nec facilisis.
-						Proin tincidunt orci dignissim nibh pellentesque sodales.
-						Integer eleifend eget est sed vehicula.
-						Sed molestie pulvinar pharetra.
-					</p>
-				</div>
+			<section>
+				<h1>Nastavitve računa</h1>
+				<form id="mosaic-form" role="form" method="post" action="">
+					<div class="form-group">
+						<label for="user-email">Epošta</label>
+						<input id="user-email" type="email" name="user-email" placeholder="Epošta" />
+					</div>
+					<div class="form-group">
+						<label for="user-password-old">Trenutno geslo<span class="require">*</span></label>
+						<input id="user-password-old" type="password" name="user-password-old" placeholder="Trenutno geslo" required />
+					</div>
+					<div class="form-group">
+						<label for="user-password-new">Novo geslo</label>
+						<input id="user-password-new" type="password" name="user-password-new" placeholder="Novo geslo" />
+					</div>
+					<div class="form-group">
+						<label for="user-password-confirm">Potrditev gesla</label>
+						<input id="user-password-confirm" type="password" name="user-password-confirm" placeholder="Potrditev gesla" />
+					</div>
+					<button id="submit-button" type="submit">Shrani</button>
+				</form>
 			</section>
 		</main>
 		<footer>
