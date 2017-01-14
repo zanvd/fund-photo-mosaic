@@ -1,0 +1,15 @@
+.form-group > input[type="number"], .mosaic-piece-group > input {
+	width: 5em;
+}
+
+.radio-group > input {
+	margin-right: 10px;
+}
+
+.mosaic-piece-group  {
+	margin-top: 2%;
+}
+.mosaic-piece-group > label {
+	font-weight: normal;
+	padding-right: 10px;
+}

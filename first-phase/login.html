@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "text/html width=device-width, initial-scale=1" />
+		<title>Foto Mozaik</title>
+		<link rel="stylesheet" type="text/css" href="style/base.css" />
+		<link rel="stylesheet" type="text/css" href="style/login.css" />
+		<link rel="stylesheet" type="text/css" href="style/form.css" />
+		<script type="text/javascript" src="script/base.js"></script>
+		<script type="text/javascript" src="script/login.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="menu-image-container">
+				<input id="menu-open" type="image" src="img/menu-open.png" width="35" height="23" alt="Menu" />
+				<input id="menu-close" type="image" src="img/menu-close.svg" width="35" height="23" alt="Zapri" />
+			</div>
+			<div id="logo-container">
+				<a href="index.html"><img src="img/logo.png" width="95" height="30" alt="Mozaik" /></a>
+			</div>
+			<div id="login-button-container">
+				<button id="login-button" type="button">Prijava</button>
+			</div>
+		</header>
+		<main>
+			<nav id="navigation" class="nav-hide">
+				<ul>
+					<li>
+						<a href="index.html">Domov</a>
+					</li>
+					<li>
+						<a href="story.html">Zgodba</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik 1</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik #</a>
+					</li>
+					<li>
+						<a href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<section>
+				<h1>Prijava</h1>
+				<form id="login-form" method="post">
+					<div class="form-group">
+						<label for="username">Uporabniško ime*</label>
+						<input id="username" name="username" type="text" placeholder="Uporabniško ime" required />
+					</div>
+					<div class="form-group">
+						<label for="password">Geslo*</label>
+						<input id="password" name="password" type="password" placeholder="Geslo" required />
+					</div>
+					<div class="robot-group">
+						<input id="robot" type="checkbox" name="robot" required />
+						<label for="robot">Nisem robot</label>
+					</div>
+					<button id="login-submit-button" type="submit">Prijavi se</button>
+				</form>
+				<div class="register-link-container">
+					<a id="register-link" href="register.html">Registriraj se</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>
+				&copy; 2016
+			</p>
+		</footer>
+	</body>
+</html>

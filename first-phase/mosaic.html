@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "text/html width=device-width, initial-scale=1" />
+		<title>Foto Mozaik</title>
+		<link rel="stylesheet" type="text/css" href="style/base.css" />
+		<link rel="stylesheet" type="text/css" href="style/mosaic.css" />
+		<link rel="stylesheet" type="text/css" href="style/form.css" />
+		<script type="text/javascript" src="script/base.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="menu-image-container">
+				<input id="menu-open" type="image" src="img/menu-open.png" width="35" height="23" alt="Menu" />
+				<input id="menu-close" type="image" src="img/menu-close.svg" width="35" height="23" alt="Zapri" />
+			</div>
+			<div id="logo-container">
+				<a href="index.html"><img src="img/logo.png" width="95" height="30" alt="Mozaik" /></a>
+			</div>
+			<div id="login-button-container">
+				<button id="login-button" type="button">Prijava</button>
+			</div>
+		</header>
+		<main>
+			<nav id="navigation" class="nav-hide">
+				<ul>
+					<li>
+						<a href="index.html">Domov</a>
+					</li>
+					<li>
+						<a href="story.html">Zgodba</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik 1</a>
+					</li>
+					<li>
+						<a href="mosaic.html">Mozaik #</a>
+					</li>
+					<li>
+						<a href="contact.html">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<section id="mosaic-section">
+				<h1>Mozaik 1</h1>
+				<img src="img/slider-pic1.png" alt="Slika1" />
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Vestibulum scelerisque, est sed finibus molestie, arcu leo luctus velit, vel aliquam magna ante vel urna.
+					Integer eu sapien hendrerit, porttitor enim et, laoreet nibh.
+					Maecenas lobortis gravida blandit.
+					Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
+					Vestibulum tincidunt risus ut nunc molestie efficitur.
+					Sed rhoncus in sem nec facilisis.
+					Proin tincidunt orci dignissim nibh pellentesque sodales.
+					Integer eleifend eget est sed vehicula.
+					Sed molestie pulvinar pharetra.
+				</p>
+			</section>
+			<section id="comment-section">
+				<h3>Komentarji</h3>
+				<div class="comment-container">
+					<h4>Komentator 1</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+				</div>
+				<div class="comment-container">
+					<h4>Komentator 2</h4>
+					<p>
+						Sed sapien massa, euismod in rhoncus porta, luctus fringilla ante.
+					</p>
+				</div>
+				<form id="comment-form" method="post">
+					<div class="form-group">
+						<label for="name">Ime<span class="require">*</span></label><br/>
+						<input id="name" type="text" name="name" placeholder="Ime" maxlength="80" size="30" required />
+					</div>
+					<div class = "form-group">
+						<label for="message">Sporočilo<span class="require">*</span></label><br/>
+						<textarea id="message" name="message" form="comment-form" maxlength="1000" cols="50" rows="10" required></textarea>
+					</div>
+					<div class="g-recaptcha" data-sitekey=""></div>
+					<div class="robot-group">
+						<input id="robot" type="checkbox" name="robot" required />
+						<label for="robot">Nisem robot</label>
+					</div>
+					<button id="submit-button" type="submit">Pošlji</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<p>
+				&copy; 2016
+			</p>
+		</footer>
+	</body>
+</html>

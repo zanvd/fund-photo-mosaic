@@ -1,0 +1,29 @@
+section > * {
+	margin-bottom: 5%;
+}
+
+#mosaic-section > img {
+	width: 100%;
+	border: 2px solid black;
+}
+#mosaic-section > p {
+	padding: 3%;
+	background-color: rgba(0, 140, 10, .7);
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+.comment-container {
+	padding: 2%;
+	border: 1.5px solid black;
+	border-radius: 0.5em;
+}
+.comment-container > h4 {
+	color: rgba(0, 0, 0, .8);
+}
+
+@media all and (min-width: 1000px) {
+	section > * {
+		margin-bottom: 2%;
+	}
+}
