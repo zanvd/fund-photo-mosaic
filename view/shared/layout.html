@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="text/html width=device-width, initial-scale=1" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/menu_button.css" />
+		<link rel="stylsheet" type="text/css" href="" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	<body>
+		<header>
+			<header>
+				<div id="menu-button-container">
+					<input type="checkbox" id="nav-button">
+						<label for="nav-button" id="nav-button-label"></label>
+						<div class="full-line"></div>
+					</input>
+				</div>
+				<div id="logo-container">
+					<a href="/"><img src="image/logo.png" width="95" height="30" alt="Mozaik" /></a>
+				</div>
+				<div id="login-button-container">
+					<button id="login-button" type="button">Prijava</button>
+				</div>
+			</header>
+		</header>
+		<main>
+			<include href="{{ @content }}" />
+		</main>
+		<footer>
+			<p>
+				&copy; 2016
+			</p>
+		</footer>
+	</body>
+</html>

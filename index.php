@@ -7,6 +7,9 @@
 	require('config/config.php');
 	require('config/db.php');
 
+	// Fetch routes.
+	require('routes/user.php');
+
 	// Setup DB connection.
 	$db_type = $funmos->exists('db.type') ? strtoupper($funmos->get('db.type')) : "";
 
@@ -26,6 +29,14 @@
 		$funmos->set('DB', $db);
 	} else {
 		echo "Database could not be set. Please check your settings.";
+	}
+
+	// Create a new session.
+	if ($funmos->get('DB')) {
+		$session = new \DB\SQL\Session($funmos->get('DB'));
+		// Save token for CSRF prevention.
+		$funmos->csrf = $session->csrf();
+		$funmos->copy('csrf', 'SESSION.csrf');
 	}
 
 	// Run framework.
