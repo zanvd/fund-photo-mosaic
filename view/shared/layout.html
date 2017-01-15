@@ -8,14 +8,14 @@
 		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/admin-panel.css" />
 		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/contact.css" />
 		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/form.css" />
-		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}shared/style/home.css" />
+		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/home.css" />
+		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/story.css" />
 		<check if="{{ @@loginpage }}">
 			<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/login.css" />
 		</check>
 		<check if="{{ @@mosaicpage }}">
 			<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/mosaic.css" />
 		</check>
-		<link rel="stylesheet" type="text/css" href="{{ @shared_front }}style/style/story.css" />
 		<script type="text/javascript" src="{{ @shared_front }}script/base.js"></script>
 		<script type="text/javascript" src="{{ @shared_front }}script/admin-panel.js"></script>
 	</head>
@@ -23,13 +23,20 @@
 		<header>
 			<div class="menu-image-container">
 				<input id="menu-open" type="image" src="{{ @shared_front }}image/menu-open.png" width="35" height="23" alt="Menu" />
-				<input id="menu-close" type="image" src="{{ @shared_front }}menu-close.svg" width="35" height="23" alt="Zapri" />
+				<input id="menu-close" type="image" src="{{ @shared_front }}image/menu-close.svg" width="35" height="23" alt="Zapri" />
 			</div>
 			<div id="logo-container">
 				<a href="/"><img src="{{ @shared_front }}image/logo.png" width="95" height="30" alt="Mozaik" /></a>
 			</div>
 			<div id="login-button-container">
-				<a id="login-button" href="login">Prijava</a>
+				<check if="{{ @@SESSION.user_id }}">
+					<true>
+						<a id="login-button" href="logout">Odjava</a>
+					</true>
+					<false>
+						<a id="login-button" href="login">Prijava</a>
+					</false>
+				</check>
 			</div>
 		</header>
 		<main>
@@ -41,12 +48,11 @@
 					<li>
 						<a href="story">Zgodba</a>
 					</li>
-					<li>
-						<a href="mosaic">Mozaik 1</a>
-					</li>
-					<li>
-						<a href="mosaic">Mozaik #</a>
-					</li>
+					<repeat group="{{ @mosaics }}" value="{{ @mosaic }}" counter="{{ @ctr }}">
+						<li>
+							<a href="mosaic/{{ @mosaic['mosaic_id'] }}">Mozaik {{ @ctr }}</a>
+						</li>
+					</repeat>
 					<li>
 						<a href="contact">Kontakt</a>
 					</li>

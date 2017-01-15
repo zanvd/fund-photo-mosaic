@@ -11,6 +11,8 @@
 	require('app/routes/user.php');
 	require('app/routes/admin.php');
 
+	ErrorHandler::instance($funmos);
+
 	// Setup DB connection.
 	$db_type = $funmos->exists('db.type') ? strtoupper($funmos->get('db.type')) : "";
 
