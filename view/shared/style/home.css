@@ -1,0 +1,27 @@
+/* Slider */
+#slider-section > * {
+	margin-bottom: 5%;
+}
+
+.slider-image {
+	text-align: center;
+	border: 2px solid black;
+}
+
+.slider-text {
+	padding: 3%;
+	background-color: rgba(0, 140, 10, .7);
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+.slider-title {
+	margin-bottom: 3%;
+	border-bottom: 1px solid black
+}
+
+.slider-description {
+	text-align: justify;
+}
+
+/* End of slider */

@@ -1,8 +1,10 @@
 <?php
 	namespace Controller\User;
 
+	use Controller\User;
+
 	class Home extends User {
-		public function main ($funmos, $params) {
+		public function get ($funmos, $params) {
 			$this->_render('user/index.html');
 		}
 	}

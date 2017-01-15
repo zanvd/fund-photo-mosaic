@@ -1,5 +1,5 @@
 <?php
-	namespace Controller\User;
+	namespace Controller;
 
 	class User extends \Controller {
 		public function __construct() {
@@ -7,8 +7,8 @@
 		}
 
 		protected function _render($file, $mime='text/html',
-				array $hive = null $ttl = 0) {
-			$funmos= \Base::instance();
+				array $hive = null, $ttl = 0) {
+			$funmos = \Base::instance();
 
 			$funmos->set('content', $file);
 

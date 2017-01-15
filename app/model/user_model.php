@@ -3,7 +3,7 @@
 
 	use \DB\SQL\Schema as Schema;
 
-	class DonorModel extends \Model {
+	class UserModel extends \Model {
 		protected
 			$db			= 'DB',
 			$table		= 'User',

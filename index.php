@@ -8,7 +8,8 @@
 	require('config/db.php');
 
 	// Fetch routes.
-	require('routes/user.php');
+	require('app/routes/user.php');
+	require('app/routes/admin.php');
 
 	// Setup DB connection.
 	$db_type = $funmos->exists('db.type') ? strtoupper($funmos->get('db.type')) : "";
@@ -19,7 +20,7 @@
 				$db = new \DB\SQL('mysql:host=' . $funmos->get('db.host') .
 									';port=' . $funmos->get('db.port') .
 									';dbname=' . $funmos->get('db.name'),
-									$funmos->get('db.user')
+									$funmos->get('db.user'),
 									$funmos->get('db.pass'));
 				break;
 		}
